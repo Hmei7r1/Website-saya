@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Friends</title>
+    <!-- link for css -->
+     <link rel="stylesheet" href="main.css">
+     <!-- link for icon -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- link aos -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1 class="Judul">Friend Me</h1>
+
+        <br>
+
+        <div class="container-1">
+            <!-- for img cat -->
+
+            <img src="img/cat-header.jpg" alt="" class="hellocity">
+
+            <!-- for Image awan  -->
+
+            <img src="img/awan.png" alt="" class="awan">
+
+            <p id="text"></p>
+        </div>
+
+        <div class="icon-down">
+            <a href="#down"><i class="icon bi-arrow-down-circle"></i></a>
+        </div>
+    </header>
+
+    <aside id="down">
+
+        <!-- for background animasi -->
+
+        <img src="img/img-cloud.jpg" alt="" class="awan-cloud-1">
+        <img src="img/img-cloud.jpg" alt="" class="awan-cloud-2">
+
+        <!-- for end background animasi -->
+        
+        <h2 class="quotes-judul">Quotes All @allysttee</h2>
+
+        <div class="quotes">
+            <div class="quotes-1" data-aos="fade-right" data-aos-duration="3000">
+                <!-- <p>di tengah badai kehidupan  yg semakin kencang, jangan lupa untuk merayakan hal hal kecil yg membuat mu bahagia.</p> -->
+                <p>Jangan kamu melupakan hal hal kecil yang membuat kamu bisa untuk mendapatkan sesuatu karen sesuatu yang besar akan dimulai dari yang kecil.</p>
+            </div>
+    
+            <div class="quotes-2" data-aos="fade-left" data-aos-duration="3000">
+                <p>jika kamu tidak mau merasakan pahitnya perjuangan, maka kamu harus siap untuk merasakan dunia tanpa pencapaian</p>
+            </div>
+
+            <div class="quotes-3" data-aos="zoom-in" data-aos-duration="3000">
+                <p>Jika kamu lelah nanti, ingatlah… Ada teman yang selalu bangga padamu.</p>
+            </div>
+
+            <div class="quotes-4" data-aos="fade-up" data-aos-duration="3000">
+                <p>Tak ada keindahan yang datang tanpa perjuangan. Jika hari ini kamu telah meraih sesuatu yang luar biasa, itu karena perjalanan panjang yang telah kamu lalui.</p>
+            </div>
+        </div>
+
+    </aside>
+
+    <script>
+
+        const textBergerak = "Hello @allysttee";
+        let i = 0;
+
+        function text(){
+
+            if (i < textBergerak.length){
+                
+                document.getElementById('text').textContent += textBergerak.charAt(i); i++;
+
+                setTimeout(text, 200);
+            } 
+        }
+
+        text()
+
+    </script>
+
+    <!-- link javascript aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>
+</html>
